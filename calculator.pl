@@ -48,7 +48,7 @@ simplify(Exp, Exp).  % Возвращает, если нет упрощения
 
 % --- Пример работы ---
 test :-
-    diff(sin(x) + x^2, x, D),
+    diff(sin(x) + x*x, x, D),
     simplify(D, S),
     write('Производная: '), write(D), nl,
     write('Упрощенный результат: '), write(S), nl.
